@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 6 - Canvas</title>
+    <link href="css/tarea6.css" rel="stylesheet">
+    <style type="text/css">
+        canvas { background: #0097A7;  }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Laboratorio de Programacion Web <span>Equipo 3</span></h1>
+    </header>
+<section class="color_fondo">    
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+        <section>
+            <h1>Etapa 5. Uso del elemento Canvas </h1>
+        </section>
+        <main class="contenedor sombra">
+            <p>Canvas (o "lienzo" traducido al español) es un elemento HTML incorporado en HTML5 que permite la generación de gráficos dinámicamente por medio del scripting. Entre otras cosas, permite la renderización interpretada dinámica de gráficos 2D y mapas de bits, así como animaciones con estos gráficos. Se trata de un modelo de procedimiento de bajo nivel, que actualiza un mapa de bits y no tiene una gráfica de escena integrada.<br><br>
+            Canvas fue introducido inicialmente por Apple para su uso dentro de su propio componente de Mac OS X Surgido en 2004, para empujar aplicaciones como widgets de Dashboard y el navegador Safari. Más tarde, en 2005, se adoptó en la versión 1.8 de los navegadores Gecko y Opera en 2006. Fue estandarizado por el Grupo de Trabajo de Tecnologías de Aplicación de hipertexto Web (WHATWG por sus siglas en inglés) sobre las nuevas especificaciones propuestas para tecnologías web de última generación.<br><br>
+            El Canvas consiste en una región dibujable definida en el código HTML con atributos de altura y ancho. El código JavaScript puede acceder a la zona a través de un conjunto completo de funciones similares a las de otras APIs comunes de dibujo 2D, permitiendo así que los gráficos sean generados dinámicamente. Algunos de los usos previstos incluyen construcción de gráficos, animaciones, juegos, y la composición de imágenes.</p>
+        </main>
+        <main class="contenedor sombra">
+            <canvas id="lienzo" width="400" height="400"></canvas>
+                    <script type="text/javascript">
+
+                        var n = 25; 
+                        var radio = 150;
+                        var cx = 200;
+                        var cy = 200; 
+                        var f = Math.PI / n * 2;
+                        var cv, ctx; 
+                        var smallRadius = 20;
+
+
+                        window.onload = function() {
+                            cv = document.getElementById('lienzo');
+                            ctx = cv.getContext('2d');
+
+                            ctx.fillStyle = 'white';
+
+                            for(var i = 0; i < n; i++){
+                                var x = radio * Math.cos(i * f) + cx;
+                                var y = radio * Math.sin(i * f) + cy;
+
+                                ctx.beginPath();
+                                ctx.arc(x, y, smallRadius, 0, Math.PI * 2, 0);
+                                ctx.fill();
+                            }
+                        };
+                    </script>
+
+        <p>Para la realizacion de este elemento Canvas se utilizo la lectura proporcionada por 
+            el instructor y de la misma manera apoyandonos con w3school
+        </p>
+        <section class="contenedor sombra segunda parrafos2">
+            <h2>CONCLUSIONES</h2>
+        <h3>•Eleazar Ivan Melendez Villarreal</h3>
+        <p>El elemento canvas fue un tanto complicado el poderlo comprender debido a que era algo nuevo y tuvimos que guiarnos conforme algunos documentos o videos, sin embargo si tiene mucho uso dentro de una pagina web y se le pueden dar muchas funciones como hasta poder crear un pizarron para dibujar dentro de el </p>
+        <h3>•Mariana Pérez Silva</h3>
+        <p>El elemento canvas permite especificar un área de la página donde se puede, a través de scripts, dibujar y renderizar imágenes, lo que amplía notablemente las posibilidades de las páginas dinámicas y permite hacer cosas que hasta ahora estaban reservadas a los desarrolladores en Flash, con la ventaja que para usar canvas no será necesario ningún plugin en el navegador, lo que mejorará la disponibilidad de esta nueva aplicación.</p>
+        </section>
+
+    
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definicion_de_HTML5</title>
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/tarea2.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1 class="titulo">Laboratorio de Programacion Web <span>Equipo 3</span></h1>
+    </header>
+    
+    <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="tareas.html">Tareas</a>
+        <a href="#">Contacto</a>
+    </nav>
+    </div>
+    <section>
+        <h1>Etapa 2. Defincion de HTML5</h1>
+    </section>
+
+    <main class="contenedor sombra">
+        <h2>HTML5</h2>
+        <section class="parrafos">
+            <p>HTML5 es una combinación de nuevas etiquetas de markup (lenguaje) HTML, propiedades CSS3, JavaScript y algunas tecnologías complementarias de apoyo, pero que técnicamente son independientes de la propia especificación HTML5. 
+                Podemos definir la especificación HTML5 como nuevos elementos de markup o sintaxis, utilizados por los diseñadores para crear páginas web junto con las etiquetas utilizadas a día de hoy. HTML5 aporta nuevas funcionalidades y herramientas con el fin de conseguir que los sitios web sean más interesantes, atractivos y útiles.
+                </p>
+            <p>
+                El lenguaje (o "markup") HTML5 incorpora algunas etiquetas nuevas pensadas para hacer que la estructura de la página web sea más lógica y funcional. Antes de HTML5, la estructura de una página dependía fuertemente de las etiquetas <'div'>, generalmente asociadas a una clase CSS o un ID. HTML5 no sustituye ningún elemento de sintaxis de HTML; simplemente añade nuevos elementos de vocabulario a la lista existente.
+            </p>
+            <h2>LOS ELEMENTOS <'VIDEO'>,<'AUDIO'> Y <'CANVAS'></h2>
+            <P>Las etiquetas <'video> y <'audio> sirven para integrar video y audio en las páginas web de la misma forma que actualmente se hace con los archivos de imagen utilizando la etiqueta <'img>. La etiqueta <'canvas> dota al lenguaje HTML de un formato nativo para el dibujo y la animación. Esta etiqueta puede servir, además, como plataforma alternativa para los gráficos y animaciones que a día de hoy podemos ver en películas Flash.</P>
+            <h2>EL ELEMENTO < CANVAS> PARA DIBUJO Y ANIMACIÓN</h2>
+            <p>El elemento canvas funciona a modo de superficie de dibujo dentro de una página web (de ahí le viene el nombre). Dentro de esta superficie de dibujo podemos crear formas con colores, gradientes y patrones de relleno. Podemos manipular los pixels de forma interactiva en pantalla, mostrar textos y exportar los contenidos hacia archivos de imagen estática, como .PNG.</p>
+            <h2>FORMULARIO WEB</h2>
+            <P>Los nuevos elementos de formulario de HTML, cuando se implementen, harán que el trabajo con formularios sea más sencillo que ahora. Se han definido unos cuantos tipos de datos nuevos para los formularios, como es el caso de email para las direcciones de correo, search para designar los campos de formulario que deben recibir términos de búsqueda, url para los campos de direcciones web y algunos más.</P>
+            <h2>INTRODUCCIÓN A LAS APIS DE HTML5 Y LAS TECNOLOGÍAS DE APOYO</h2>
+            <p>Las APIs (Application Programming Interfaces o, en español, Interfaces de Programación de Aplicaciones o simplemente "interfaces de programación") son una forma de crear aplicaciones utilizando componentes preconfigurados cuyo uso no se restringe a la web, ni siquiera a los lenguajes de scripting. no de los objetivos principales de una API es el de normalizar el modo de trabajo de ciertos mecanismos y simplificar tareas de programación, que de lo contrario, serían bastante complejas.</p>
+            <h2>LA API DE GEOLOCALIZACIÓN EN ACCIÓN</h2>
+            <p>Geolocation es una API que nos permite conocer el punto geográfico desde el cual se conecta el navegador a Internet. Esta información se emplea para enviar al usuario datos de interés para él, ajustados a su ubicación. </p>
+        </section>
+
+    </main>
+
+    <section class="contenedor sombra segunda parrafos2">
+        <h2>WEB WORKETS</h2>
+        <p>Web Workers es otra API que se suele considerar de la familia HTML5. Web Workers es un marco de programación que resuelve problemas de rendimiento de los navegadores. Los Web Workers son scripts que se ejecutan en threads independientes. Esto quiere decir que ciertos procesos como puede ser obtener datos desde una base de datos, se ejecutan de forma independiente de las actividades que desarrolle el usuario, lo que da como resultado un entorno mucho más fluido para éste.</p>
+        <h2>ALMACENAMIENTO WEB</h2>
+        <p>El Almacenamiento Web (Web Storage) es un ejemplo de uso de modelos preexistentes de tecnologías web bajo nuevas modalidades, más potentes. El Web Storage mejora el concepto de cookies del navegador. Las cookies son una tecnología bastante limitada y no resulta fácil su utilización por parte de los diseñadores web. Los datos guardados bajo la modalidad  sesión Storage se pierden al cerrar el navegador.</p>
+        <h2>FONDOS, BORDES, COLORES RGBa, GRADIENTES, SOMBRAS y ESQUINAS REDONDEADAS</h2>
+        <P>La descripción del espacio de color RGBa es otra novedad de CSS3, ya que la "a" representa el grado de transparencia (o "alpha"). Con la notación RGBa de color ahora podemos aplicar efectos de transparencia a cualquier objeto de la página.</P>
+        <h2>MEDIA QUERIES DE CSS</h2>
+        <P>Se trata de lanzar una consulta al navegador para determinar el tipo de pantalla en el cual se va a restituir la página y, a partir de esta información, enviar un estilo específico, optimizado para esas dimensiones. Por ejemplo, la misma página web, en un monitor con 2.000 pixels de ancho podría mostrarse con cuatro o incluso cinco columnas, pero en pantallas de 320 pixels, podría enviar una plantilla de estilos que solo utilice una columna.</P>
+        <h2>ANIMACIONES Y TRANSICION CON CSS</h2>
+        <p>El elemento Canvas de HTML5 y las transiciones de CSS3 permitirán crear elementos animados e interactivos sobre la página. Las animaciones de CSS, y el tema siguiente, las transiciones, probablemente estarán soportadas por la mayoría de los navegadores en los próximos años. En el momento de escribir esta guía, el estándar todavía no está cerrado por lo que no está soportado en todos los navegadores, en cualquier caso puedes empezar a probar algunos ejemplos con la platform preview de Internet Explorer 10.</p>
+        <p>Las transiciones de CSS están muy relacionadas con el concepto de animación, pero son algo completamente distinto. Una transición permite variar el valor de una propiedad CSS de manera continua a lo largo de un intervalo de tiempo definido. Actualmente podemos conseguir este tipo de transiciones utilizando JavaScript y Flash, pero igual que sucede con otros muchos elementos de CSS3.</p>
+        <h2>FUNCIONALIDADES Y CARACTERISTICAS DE HTML5</h2>
+        <p>La lista siguiente es una enumeración de otras funcionalidades que forman parte de la especificación HTML5 o de sus tecnologías adscritas que deben añadirse (o en algunos casos ya están añadidas) a los navegadores del futuro.
+            <p>•	Drag and Drop</p>	
+            Las operaciones Drag-and-Drop ("arrastrar y soltar") permiten al usuario mover en pantalla los elementos de forma visual en lugar de hacerlo pulsando botones. La API Drag and Drop de HTML5 se basa en la implementación original de Internet Explorer.
+            <p>•	La API File (Archivo)</p>
+            La API llamada "File" (Archivo) permite a los desarrolladores acceder a archivos del disco duro de la máquina cliente sin necesidad de instalar extensiones o complementos.
+           <p>•	Disposición de objetos en pantalla con Flexbox</p> 
+            CSS3 introduce una nueva forma de crear diseños para la distribución de los objetos en pantalla, llamado Flexible Box Layout ("Flexbox"). En este sistema se pueden crear disposiciones fluidas sin necesidad de acudir a las habituales directivas "float" y "clear" de CSS.
+            <p>•	Distribuciones en rejilla y columnas múltiples</p>
+            También dentro de CSS, las definiciones de distribuciones en pantalla en formato de columnas múltiples y rejillas ("grids") son dos mejoras más orientadas a facilitar la presentación visual de las páginas web.
+            </p>
+    </section>
+
+    <section class="contenedor sombra segunda parrafos2">
+        <h2>SECCIONES Y ESQUEMA DE UN DOCUMENTO HTML5</h2>
+        <p>La estructura de un documento, por ejemplo, la estructura semántica de lo que está entre < body> y </ body> es fundamental para presentar la página al usuario. HTML4 usa la idea de secciones y subsecciones de un documento para describir su estructura. Una sección está definida por un elemento divisor HTML (< div>) con elementos de cabecera HTML (< h1>, < h2>, < h3>, < h4>, < h5>, o < h6>) en él, definiendo sus títulos. La relación de estos elementos divisor y de cabecera HTML desemboca en la estructura del documento y su esquema.</p>
+        <p>La definición de la estructura de un documento en HTML 4 y su algoritmo de esquematizado es muy tosco y genera numerosos problemas:</p>
+        <p>1.	El uso de < div> para definir secciones semánticas sin definir valores específicos para los atributos class hace imposible la automatización del algoritmo de esquematizado ("¿Es ese < div> parte del esquema de la página, definiendo una sección o subsección?" o "¿es un < div> sólo de presentación, sólo usado para estilo?").</p>
+        <p>2.	Mezclar varios documentos es difícil: la inclusión de un subdocumento en un documento principal significa cambiar el nivel de los elementos de cabecera HTML Headings Element para que el esquema se mantenga. Esto se resuelve en HTML5 con los recientemente introducidos elementos de seccionado (< article>, < section>, < nav> y < aside>) son siempre subsecciones dentro de la sección que las contiene, sin importar qué secciones son creadas por cabeceras internas.</p>
+        <p>3.	Debido a que cada elemento de cabecera HTML es parte del esquema, no es posible describir un subtítulo o título secundario (por ejemplo, < h1>Mozart</ h1>< h2>El genio salzburgués</ h2> crea el esquema 1. Mozart 1.1 El genio salzburgués). HTML5 introduce el elemento < hgroup> que oculta todos los elementos de cabecera excepto el primero de más alto rango (por ejemplo, < hgroup>< h1>Mozart</ h1>< h2>El genio salzburgués</ h2></ hgroup> crea el esquema 1. Mozart).</p>
+        <h2>USO DE AUDIO Y VIDEO EN HTML5</h2>
+        <img src="Imagenes/Captura.PNG">
+        <p>• SRC</p>
+        <p>De la misma manera que para el elemento <img>, el atributo src (source) contiene una ruta al video que deseas incrustar. Funciona de la misma manera.</p>
+        <p>• CONTROLS </p>
+        <p>Los usuarios deben ser capaces de controlar la reproducción de video y audio (esto es especialmente crítico en personas que padecen  epilepsia). Se debe utilizar el atributo controls para incluir la interfaz de control del browser, o construir la nuestra utilizando la JavaScript API apropiada. Como mínimo la interfaz debe incluir una manera de empezar y terminar la reproducción, y ajustar el volumen.</p>
+        <h2>VIDEO</h2>
+        <img src="Imagenes/Captura1.PNG">
+        <p>• width y height</p>
+        <p>Puede controlar el tamaño con estos atributos o con  CSS. En ambos casos, los vídeos mantienen su relación anchura - altura nativa. Si la relación de aspecto no se mantiene con los tamaños establecidos, el vídeo crecerá para rellenar el espacio horizontalmente y el espacio sin rellenar sólo recibirá un color de fondo sólido de forma predeterminada</p>
+        <p>• autoplay</p>
+        <p>Hace que el audio o el vídeo empiece a reproducirse de inmediato, mientras se carga el resto de la página. Le aconsejamos que no utilice vídeo (o audio) de reproducción automática en sus sitios, ya que los usuarios pueden encontrarlo molesto.</p>
+        <p>•loop</p>
+        <p>Hace que el vídeo (o audio) comience a reproducirse cada vez que finaliza. Esto puede en ocasiones resultar molesto, así que utilizalo solo si es realmente necesario.</p>
+        <p>•muted</p>
+        <p>Hace que los medios se reproduzcan con el sonido apagado de forma predeterminada.</p>
+        <p>•poster</p>
+        <p>La URL de una imagen que se mostrará antes de reproducir el vídeo. Está destinado a ser utilizado para una pantalla de presentación o pantalla publicitaria (miniatura del vídeo).</p>
+    </section>
+
+    <section class="contenedor sombra segunda parrafos2">
+        <h2>CONCLUSIONES</h2>
+        <p>•Mariana Perez Silva</p>
+        <p>Gracias al html, hoy en día existen muchas páginas que son de gran ayuda. Este lenguaje le abrió las puertas a las personas para que pudiesen expresarse y que esto lo viera más gente. 
+            El internet no sería lo mismo sin páginas web, html mejoró la forma de poder ver la información, gracias a su forma de trabajar con css y javascript podemos ver una página web llena de color, formas e incluso interactiva, pues estos le dan vida al html. Ésta lección nos dice desde su historia hasta la forma de ver las etiquetas que podemos emplear en el html y como fueron cambiando con el paso del tiempo.</p>
+        <p>•María Fernanda De León Elizondo</p>
+        <p>Sin HTML no existiría el Internet que hoy conocemos, si no se hubiera inventado, seguiríamos con el aburrido FTP (Protocolo de Transferencia de Ficheros) mandándonos o bajando archivos que a veces ni sabíamos lo que eran. Ahora por medio de una página llena de colores y botones por la cual se puede navegar, se puede tener acceso a bastante información y archivos. Infinitas son las posibilidades que te brindan las páginas WEB ya que no solo te dan la posibilidad de pasar el tiempo navegando, sino que también hasta se puede comprar, ya que todas las páginas con las que se compone la World Wide Web están hechas con el lenguaje de programación HTML.</p>
+        <p>•Eleazar Ivan Melendez Villarreal</p>
+        <p>HTML a ayudado a poder estructurar cada pagina que dia a dia que entramos a navegar a internet podemos visualizar, las nuevas funciones con las actualizaciones que ha tenido este lenguaje de etiquetado ha sido parte fundamental para estructurar aun mejor la informacion, ademas, con la ayuda de CSS es sorprendente los tipos de diseños, animaciones e incluso transiciones que se pueden crear. Es por eso la importancia de tener un buen diseño y un buen etiquetado en nuestra pagina, esto nos llevara a tener una pagina eficiente y de calidad.</p>
+        <p>•Aldo Giovanni Salazar Fernandez</p>
+        <p>Si bien HTML en su momento fue una de las mas grandes innovaciones en su campo, como todos los lenguajes de programación, tenia sus pros y contras, lo que se busco con las diferentes versiones fue corregir los problemas y aplicar mejoras con forme los tiempos fueron cambiando. En la actualidad la versión mas reciente es la de HTML5 que, gracias a su compatibilidad con otros lenguajes y programas tales como css y javascript nos dan la oportunidad de tener acceso a paginas web cada vez mas amigables tanto con nuevos como con viejos usuarios. Algo que podemos asegurar es que esta no sera la ultima versión de HTML que veremos, y que conforme sigamos evolucionando los lenguajes que usamos y paginas web lo harán con nosotros.</p>
+   
+    </section>
+</body>
+</html>

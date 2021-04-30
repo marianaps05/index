@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion_presentacion_con_CSS</title>
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/tarea3.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Laboratorio de Programacion Web <span>Equipo 3</span></h1>
+        </header>
+        
+        <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="#">Contacto</a>
+        </nav>
+        </div>
+        <section>
+            <h1>Etapa 3. Introduccion a la presentacion en pantalla con CSS </h1>
+        </section>
+
+        <main class="contenedor sombra">
+            <h2>El papel del archivo de reset CSS</h2>
+            <section class="parrafos">
+                <p>Antes de empezar a crear un diseño visual de página Web vamos a ver cómo se utiliza un archivo de reset de CSS. Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada navegador.</p>
+                <p>
+                    CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente, pero hay otros estilos no tan obvios. Por ejemplo: el estilo por defecto para un elemento heading 1 (< h1>) incluye unos márgenes de 10 pixels por encima y por debajo del texto. Si queremos modificar el estilo de h1 para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan dichos valores a cero.                </p>
+                <p>Una regla CSS para anular los márgenes superior e inferior de los elementos heading 1 es así:</p>
+                <p> h1{
+                    margin-top:0px; <p>margin-bottom:0px;</p>
+                
+                } </p>
+                <p>Todos los elementos HTML incluyen márgenes por defecto. Aunque los navegadores web actuales tienen una calidad muy superior a los antiguos, conviene saber que cada motor de restitución empleado por los navegadores aplica sus propias reglas para mostrar los elementos en pantalla. En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede transformarse en 15 pixels en el navegador. Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS de reset que elimine los estilos por defecto aplicados a los elementos HTML utilizados con más frecuencia. Con este reseteo de valores podemos conseguir una base fiable y coherente sobre la cual construir nuestros nuevos estilos.</p>
+                <h2>Ampliación de la hoja de estilos de reset</h2>
+                <p>Eric Meyer fue el primer desarrollador que preparó hojas de estilo de reset, que después distribuyó para uso público.</p>
+                <p>EL uso de hojas de reset CSS puede tener algunas desventajas, sobre todo para los neófitos: tendrán que recordar constantemente que están utilizando dicha hoja de estilos y deben tener en cuenta cómo afectará a los distintos elementos del sitio web. Si estamos aplicando la hoja de reset a todo el sitio, algunos de sus efectos pueden resultar sorprendentes, sobre todo con elementos con los que no estamos especialmente familiarizados. Por ejemplo, un archivo CSS de reset elimina los márgenes externos e internos de la mayoría de los elementos de los formularios, y cuando utilizan por primera vez con campos de formulario, muchos se preguntan por qué los botones, campos de texto y otros elementos aparecen de esa forma.</p>
+                <h2>Introducción a las distintas opciones de presentación de páginas</h2>
+                <p>Antes de la estructura visual de nuestras páginas web tenemos que decidir unas cuantas cosas. Lo primero es qué anchura va a tener. Hay dos categorías principales de estructuras en base a su anchura: las de anchura fija y las de ancho variable. En las estructuras de ancho fijo todos los elementos de la página se anidan dentro de un contenedor que tiene un ancho explícito</p>
+                <p>La anchura fija es una solución muy cómoda para el diseñador ya que permite ubicar con precisión los distintos elementos (cabeceras, barras laterales y pies de página). Además, aporta un esqueleto robusto para otros elementos, como la anchura de párrafo o el posicionamiento de imágenes cuando éstas aparecen en gran número (por ejemplo, en sitios web de catálogos de producto).</p>
+                <div class="navegacion-principal">
+                <img  src="Imagenes/css.png">  
+                <p></p>    
+                <p>Las estructuras de ancho fijo indican explícitamente la anchura y ocupan un espacio definido dentro de la página web.</p>          
+                <p>Las estructuras flexibles se llaman así porque están pensadas para adaptarse a la anchura de la ventana del navegador en cualquier momento. Este tipo de disposiciones es útil cuando los usuarios acceden desde pantallas con resoluciones muy variadas, lo que hace imposible elegir un ancho fijo que ofrezca el mismo aspecto en todas ellas.  Una estructura flexible bien diseñada es capaz de ajustarse automáticamente al tamaño de ventana del navegador.</p>
+                </div>
+               
+                <div class="navegacion-principal">
+                
+                <p>Las estructuras visuales flexibles se reajustan al cambiar el tamaño de la ventana del navegador.
+                    Estas estructuras son adecuadas para la web porque permiten el reposicionamiento en pantalla de textos e imágenes. Puesto que los dispositivos móviles suponen actualmente una proporción importante de los navegadores en uso en el mercado, las estructuras flexibles por lo general se prefieren para ofrecer una mejor experiencia en este nuevo tipo de interfaces frente a las estructuras de ancho fijo, que habitualmente tienen problemas por falta de espacio (sobre todo en teléfonos móviles).
+                    Las estructuras de ancho variable son más difíciles de diseñar y obligan al creador a resolver una serie de asuntos adicionales. Por ello, en esta lección vamos a empezar por crear una estructura de anchura fija.
+                    </p>
+                    
+                    <img  src="Imagenes/estructuras.png">  
+                </div>
+
+                <h2>El elemento < div>: creación de una estructura CSS de dos columnas con anchura fija</h2>
+                <p>Podemos considerar al elemento < div> como un contenedor genérico en el que podemos poner elementos relacionados entre sí de forma lógica. La apertura y cierre de etiquetas < div> suele hacerse rodeando a otros elementos de la página, de forma que dichos elementos quedan anidados dentro del contenedor. Puedes tener en la misma página todos los elementos < div> que consideres necesarios y con frecuencia se utilizan para crear el armazón visual. Un elemento < div> suele llevar un atributo ID (con lo que adquiere un “nombre” explícito dentro de la página) o bien pertenecer a una clase CSS, utilizándose ambos como medio para aplicar al contenedor uno o más estilos CSS. El empleo de elementos < div> facilita a otras personas la identificación de las diversas secciones en que se subdivide la página y también nos ayuda a controlar y aplicar estilos en cada una de ellas</p>
+                <h2>La propiedad float CSS</h2>
+                <p>La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición relativa con respecto a él. Este comportamiento también nos sirve para crear columnas en una página.</p>
+            </section>
+    
+        </main>
+    
+        <section class="contenedor sombra segunda parrafos2">
+            <h2>¿QUÉ ES UN CSS?</h2>
+            <p>Las siglas CSS (Cascading Style Sheets) significan «Hojas de estilo en cascada» y parten de un concepto simple pero muy potente: aplicar estilos (colores, formas, márgenes, etc...) a uno o varios documentos (generalmente documentos HTML, páginas webs) de forma masiva.</p>
+            <p>Se le denomina estilos en cascada porque se aplican de arriba a abajo (siguiendo un patrón denominado herencia que trataremos más adelante) y en el caso de existir ambigüedad, se siguen una serie de normas para resolverla.</p>
+            <p>La idea de CSS es la de utilizar el concepto de separación de presentación y contenido, intentando que los documentos HTML incluyan sólo información y datos, relativos al significado de la información a transmitir (el contenido), y todos los aspectos relacionados con el estilo (diseño, colores, formas, etc.) se encuentren en un documento CSS independiente (la presentación). </p>
+            <h2>¿PARA QUE SIRVE UN CSS? </h2>
+            <p>El código CSS hace la vida más fácil al desarrollador front-end al separar las estructuras de un documento HTML de su presentación. Dicho de otro modo, el HTML actuaría como es esqueleto de la web, definiendo su estructura básica, y el CSS añadiría toda la capa de personalización sobre el que la web define su aspecto final.</p>
+            <p>Siguiendo este fundamento resulta muy fácil para un diseñador web realizar cambios en la apariencia de una web sin afectar de manera dramática a su contenido. El contenido siempre será el mismo, solo cambia como aquello que podemos ver. CSS es fácil de entender y aprender, y nos da un potente control de cómo diseñar los documentos HTML</p>
+            <h2>¿CUÁL ES LA DIFERENCIA QUE SERIA MAS DIFÍCIL DE REALIZAR EN UN SITIO WEB SI SE OPTARA POR NO USAR UN CSS? </h2>
+            <p>Que ésta no tendría diseño, el CSS le da vida a un sitio web con su estructura. A pesar de que el uso de CSS no parezca tan importante ¡sí lo es! Su ejecución te permite mejorar tus técnicas SEO y de posicionamiento lo que es crucial para una estrategia de Marketing Digital. </p>
+            
+    
+       
+    
+        <section class="contenedor sombra segunda parrafos2">
+            <h2>CONCLUSIONES</h2>
+            <h3>•Mariana Perez Silva</h3>
+            <p>CSS fue creado para trabajar en conjunto con lenguajes de marcado como HTML. Se utiliza para estilizar una página. Hoy en día podemos ver algún tipo de implementación de CSS en cualquier parte, ya que es un requisito tan importante como el propio lenguaje de marcado.</p>
+            <h3>•María Fernanda De León Elizondo</h3>
+            <p>CSS es la tecnología creada con el fin de separar la estructura de la presentación, y mejorar la usabilidad y experiencia de usuario de un sitio web, permitiendo el desarrollo web responsiva y disminuyendo el procesamiento y el tiempo de carga, factores que pueden marcar la diferencia entre triunfar o morir en el intento.</p>
+            <h3>•Eleazar Ivan Melendez Villarreal</h3>
+            <p>Si nos regresamos un poco atras nos damos cuenta de como ha ido avanzando el desarrollo web, anteriormente para poder darle estilo a tu etiquetado de HTML teniaas que hacerlo directamente en el mismo editor de texto, ahora con CSS es mucho mas facil, vino a realizar un cambio drastico en todo el estilo de nuestra pagina y darle un mejor diseño, con nuevas opciones. CSS brinda un amplio catalogo de funciones que sabiendo utilizarlo bien es fundamental a la hora de estructurar ru pagina web</p>
+            <h3>•Aldo Giovanni Salazar Fernandez</h3>
+            <p>Gracias a CSS se ha podido personalizar cada vez mas los sitios web a los que tenemos accesos, permitiendo una interacción más natural e intuitiva con el usuario, esto también ha ayudado a la adaptabilidad de los sitios web en los nuevos dispositivos que utilizamos, desde celulares hasta tabletas e incluso smartwatches.</p>
+            <h3>•Noe Saúl Jiménez Treviño</h3>
+            <p>Lo que podemos decir del CSS es que es una herramienta sumamente importante hoy en día para las paginas web, su sintaxis y lógica de este código es sencillo de aprender para todo aquel que se dedique a ello. Pero el CSS tiene demasiadas funciones para toda pagina web que se requieran hacer ya que hace toda la parte “pesada” de la pagina web. </p>
+        </section>
+</body>
+</html>

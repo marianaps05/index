@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Basicos de HTML, XHTML y CSS</title>
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/tarea3.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Laboratorio de Programacion Web <span>Equipo 3</span></h1>
+        </header>
+        
+        <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="tareas.html">Tareas</a>
+            <a href="#">Contacto</a>
+        </nav>
+        </div>
+        <section>
+            <h1>Etapa 4. Conceptos Basicos de HTML, XHTML y CSS </h1>
+        </section>
+
+        <main class="contenedor sombra">
+            <h2>La propiedad float CSS</h2>
+            <section class="parrafos">
+                <p>La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición relativa con respecto a él. Este comportamiento también nos sirve para crear columnas en una página..</p>
+                <p>
+                    Una imagen con su emplazamiento por defecto con HTML (izquierda) y la misma imagen “flotando” hacia la derecha.
+
+                    El valor float se puede también declarar como “left”. En el ejemplo anterior, la imagen pasaría al lado izquierdo del div contenedor, y el texto se empezaría llenando el lado derecho restante.
+                    
+                    Los únicos valores posibles para float son “left”, “right” y “none”. No se puede centrar un objeto utilizando esta propiedad. </p>
+                <img src="imagenes/hh749022.c-14(es-es,msdn.10).jpg"  alt="">
+                
+             <h2>La propiedad clear</h2>
+                <p>Cuando añadimos la propiedad CSS clear a un objeto, le estamos indicando una regla que dice “no admito elementos flotantes a mi lado”. Podemos especificar si queremos que no haya elementos flotantes a la izquierda, a la derecha o en ambos lados. En el caso del pie de página, queremos eliminarlos de ambos lados.</p>
+                <img src="imagenes/clear.PNG" alt="">
+                <p></p>
+                <h2>Aplicar una imagen de fondo al pie de página</h2>
+                <p>Hasta ahora nuestra estructura de página muestra los colores de fondo que hemos declarado a los elementos div. En esta práctica vas a aprender a insertar imágenes. Para ello empezaremos por añadir una imagen de fondo al pie de página mediante CSS.</p>
+                <img src="imagenes/clear1.PNG" alt="">
+                <img src="imagenes/clear2.PNG" alt="">
+                <img src="imagenes/clear3.PNG" alt="">
+                <img src="imagenes/clear4.PNG" alt="">
+                <p></p>    
+            </section>
+    
+        </main>
+    
+        <section class="contenedor sombra segunda parrafos2">
+            <h2>¿QUÉ ES UN XML Y PARA QUE SIRVE?</h2>
+            <p>XML son las siglas de Extensible Markup Language, que podemos traducir como Lenguaje de Marcas Extensibles, aunque realmente es un meta-lenguaje.</p>
+            <p>Normalmente, los archivos XML contienen información de cualquier tipo, ya sea información sensible o información de cualquier ámbito.
+                Los archivos XML se componen de etiquetas que nos aportan datos e información que queremos procesar. Estas etiquetas pueden estar de forma individual o anidadas.
+                 </p>
+            <p>Habitualmente un fichero XML incluye mucha información y debe de ser procesada correctamente por el usuario, en este caso el desarrollador. Cuanto más grande sea un fichero XML nos estará indicando que más información trae.
+                Lo primero que debemos saber de un fichero XML es que siempre contendrá una única etiqueta dando la introducción a dicho fichero, y a partir de ella podremos crear cualquier tipo de archivo XML.
+                </p>
+            <p>Dentro de estos archivos XML tendremos una o varias etiquetas, que a su vez tendrán otras etiquetas, que podrán estar o no anidadas.</p>
+            <h2>¿QUE CARACTERISTICAS TIENE UN DOCUMENTO HTML? </h2>
+            <p>•	Puede ser creado y editado con cualquier editor básico de textos.</p>
+            <p>•	Es multiplataforma, o sea, puede ser visualizado por cualquier navegador de cualquier sistema operativo.</p>
+            <p>•	No diferencia entre mayúsculas y minúsculas.</p>
+            <p>•	Utiliza etiquetas o marcas, que consisten en breves instrucciones de comienzo y final, mediante las cuales se determina la forma en la que debe aparecer en su navegador el texto, así como también las imágenes y demás elementos en la pantalla del ordenador.</p>
+            <p>•	Cada elemento de un documento HTML consta de una etiqueta de comienzo, un bloque de texto y una etiqueta de fin.</p>
+            <p>•	Lenguaje estático.</p>
+            <p>•	Es utilizado para la creación de páginas web.</p>
+            <p>•	Los documentos HTML son documentos de hipertexto que aparecen enlazando a otros documentos.</p>
+            <p>•	Es un estándar reconocido por todo el mundo y cuyas normas define un organismo sin ánimo de lucro llamado World Wide Web Consortium, más conocido como W3C.</p>
+        <h2>¿QUÉ ES XHTML?</h2>
+        <p>Los archivos escritos en el lenguaje de marcado XHTML utilizan etiquetas estándar de HTML. Sin embargo, las directrices más estrictas de XML se aplican al código XHTML, a diferencia del código HTML puro, por lo que los archivos XHTML están muy bien formados y pueden analizarse fácilmente con XML.</p>
+        <p>Los archivos escritos en el lenguaje de marcado XHTML utilizan etiquetas estándar de HTML. Sin embargo, las directrices más estrictas de XML se aplican al código XHTML, a diferencia del código HTML puro, por lo que los archivos XHTML están muy bien formados y pueden analizarse fácilmente con XML.</p>
+        <h2>¿PARA QUE SIRVE XHTML</h2>
+        <p>XHTML ha sido diseñado para extender HTML y permitir la compatibilidad con nuevos formatos de datos como videos, imágenes o lenguajes de scripting. Dado que HTML siempre se basó en SGML y, por lo tanto, era relativamente complejo, se encontró que un lenguaje meta de marcado limitado, como XML, era adecuado para definir la estructura básica y las posibilidades sintácticas del XHTML. </p>
+        
+        <h2>Informacion de W3School </h2>
+        <img src="imagenes/w3school.PNG" alt="">
+        <img src="imagenes/w3s.PNG" alt="">
+        <img src="imagenes/w3.PNG" alt="">
+        <img src="imagenes/xhtml.PNG" alt="">
+    
+        <section class="contenedor sombra segunda parrafos2">
+            <h2>CONCLUSIONES</h2>
+            <h3>•Mariana Perez Silva</h3>
+            <p>En la lección 2 nos muestra las estructuras básicas sobre el lenguaje html y sus diferencias al xhtml, este ultimo es una mejora con respecto al otro y es utilizado para mejorar las paginas web. Nos brinda casi las mismas funciones que el html solo que éste corrige errores que html no tiene</p>
+            <h3>•María Fernanda De León Elizondo</h3>
+            <p>Es un metalenguaje con el que se pueden definir otros lenguajes de etiquetas, para algún uso determinado. Lo que se hace con XML es definir la forma física y lógica en que se estructura la información dentro de un documento XML, no lo que se va a hacer con la información.</p>
+            <h3>•Eleazar Ivan Melendez Villarreal</h3>
+            <p>Como bien se sabe HTML es un lenguaje de etiquetado y sus caracteristicas son muy comunes, lo que hace que se muy facil de aprender, no se necesita de algun editor especifico tan es asi que se puede crear en un bloc de notas este es un estandar conocido por todo el mundo y esta definido por el organismos World Wide Web, este lenguaje cuentas con excelentes funciones y mejora </p>
+            
+        </section>
+</body>
+</html>
